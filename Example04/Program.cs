@@ -20,7 +20,9 @@ namespace Example04
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine("第一個數字輸入錯誤");
+                Console.WriteLine("錯誤訊息:\n" + e.ToString());
+                return;
             }
             Console.Write("請輸入第二個數字:");
             try
@@ -30,6 +32,9 @@ namespace Example04
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("第二個數字輸入錯誤");
+                Console.WriteLine("錯誤訊息:\n" + e.ToString());
+                return;
             }
             Console.WriteLine("{0}+{1}={2}", number1, number2, number1 + number2);
         }
